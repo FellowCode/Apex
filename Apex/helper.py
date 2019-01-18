@@ -8,7 +8,7 @@ def checkReCaptcha(response):
         'response': response
     }
     r = requests.post(url, data)
-    content = r.content
+    content = r.content.decode('utf-8')
     rdata = json.loads(content)
     success = rdata['success']
     return success

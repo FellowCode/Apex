@@ -1,16 +1,13 @@
 {% load static %}
 <nav>
-    <div class="nav-wrapper red darken-1">
+    <div class="nav-wrapper green lighten-1">
         <div class="container">
             <ul class="left">
                 <li class="logo"><a href="/"><img class="nav-logo" src="{% static 'img/MxLogo.png' %}" ></a></li>
             </ul>
 
             {% if user.is_superuser %}
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="icon"><a href="/admin/"><i class="material-icons left">star</i></a></li>
-            </ul>
-            <ul id="nav-mobile" class="right show-med-down">
+            <ul id="nav-mobile" class="right">
                 <li class="icon"><a href="/admin/"><i class="material-icons left">star</i></a></li>
             </ul>
             {% endif %}

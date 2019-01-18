@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import *
 from Apex.helper import checkReCaptcha
+from .helper import *
+
 
 def index(request):
     return render(request, 'Main/Index.html')
@@ -8,19 +10,19 @@ def index(request):
 
 def service_order(request):
     if request.method == 'GET':
-        service_type = 'pc'
-        service_type_verbose = 'ПК'
+        service_id = '1'
         try:
-            service_type = request.GET['type']
+            service_id = request.GET['id']
         except: pass
-        return render(request, 'Main/ServiceOrder.html', {'service_type': service_type,
+        service_type_verbose = get_service_verbose_name(service_id)
+        return render(request, 'Main/ServiceOrder.html', {'service_id': service_id,
                                                           'service_type_verbose': service_type_verbose})
 
 def service_order_accept(request):
     if request.method == 'POST':
-        if checkReCaptcha(request.POST['response']):
-            print(request.POST['type'])
-            order = ServiceOrder(service_type=request.POST['type'], name=request.POST['name'],
+        if checkReCaptcha(request.POST['g-recaptcha-response']):
+            service_verbose_name = get_service_verbose_name(request.POST['service_id'])
+            order = ServiceOrder(service_type=service_verbose_name, name=request.POST['name'],
                                                 email=request.POST['email'], phone=request.POST['phone'],
                                                 note=request.POST['note'])
             order.save()

@@ -3,7 +3,14 @@
     width: auto;
 }
 
-.nav-wrapper .logo a {
+.nav-wrapper a {
     padding: 0;
     height: 64px;
+}
+
+.nav-wrapper .icon a {
+    padding: 0 15px;
+}
+.nav-wrapper .icon i {
+    margin: 0;
 }

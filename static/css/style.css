@@ -1,3 +1,13 @@
 .full-width {
     width: 100%;
 }
+
+.container {
+    width: 90%;
+}
+
+@media only screen and (min-width: 1500px){
+    .container {
+        width: 1500px;
+    }
+}
