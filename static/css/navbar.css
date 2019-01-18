@@ -1,0 +1,9 @@
+.nav-wrapper .logo img {
+    height: 64px;
+    width: auto;
+}
+
+.nav-wrapper .logo a {
+    padding: 0;
+    height: 64px;
+}
