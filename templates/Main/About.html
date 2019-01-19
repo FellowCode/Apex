@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Apex Биробиджан: О нас{% endblock %}
+
+{% block stylesheet %}
+    <link href="{% static 'css/about.css' %}?version=2" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2 z-depth-1 about">
+                <h4 class="main">О нас</h4>
+                <h5>И.П. Жуков Д.С.</h5>
+                <h6>ИНН </h6>
+                <h6>ОГРН </h6>
+                <h4>Местоположение</h4>
+                <h5>г.Биробиджан</h5>
+                <h4>Контактные данные</h4>
+                <h5>Телефон: 89841284264</h5>
+                <h5>Email: support@apex79.ru</h5>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block script %}
+{% endblock %}

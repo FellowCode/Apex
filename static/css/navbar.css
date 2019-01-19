@@ -1,6 +1,12 @@
 .nav-wrapper .logo img {
     height: 64px;
     width: auto;
+    padding: 0 15px;
+}
+.nav-wrapper .text a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 15px;
 }
 
 .nav-wrapper a {

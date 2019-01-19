@@ -1,0 +1,27 @@
+.about {
+    margin-top: 30px;
+    padding: 50px !important;
+    background: url("../img/Pattern1.jpg") repeat;
+}
+.about h4.main {
+    margin-top: 0;
+    font-weight: 600;
+}
+.about h5 {
+    margin-left: 15px;
+}
+.about h6 {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about h4 {
+        font-size: 18px;
+    }
+    .about h5 {
+        font-size: 16px;
+    }
+    .about h6 {
+        font-size: 14px;
+    }
+}

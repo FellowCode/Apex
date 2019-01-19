@@ -16,7 +16,7 @@
                         <div class="divider"></div>
                         <h5>{{ service_type_verbose }}</h5>
                     </div>
-                    <form action="/serviceorder/result/" method="post">{% csrf_token %}
+                    <form action="/service/order/result/" method="post">{% csrf_token %}
                         <input type="hidden" name="service_id" value="{{ service_id }}">
                         <div class="input-field col s10 offset-s1 m6">
                           <i class="material-icons prefix">account_circle</i>
