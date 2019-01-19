@@ -2,6 +2,8 @@
     background: url("../img/Pattern1.jpg") repeat;
     padding: 20px !important;
     margin-top: 30px;
+    height: 600px;
+    position: relative;
 }
 .about-card h5 {
     width: 100%;
@@ -17,4 +19,12 @@
 }
 .about-card a.btn-large{
     margin-top: 20px;
+    height: 50px;
+}
+.about-card .bottom-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
 }

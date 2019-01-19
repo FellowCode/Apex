@@ -127,4 +127,17 @@ STATICFILES_DIRS = [
 
 ]
 
+#SMTP
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.yandex.ru'
+
+EMAIL_PORT = 465
+
+EMAIL_HOST_USER = 'info@apex79.ru'
+EMAIL_HOST_PASSWORD = ''
+
+EMAIL_USE_SSL = True
+
+#Google reCaptcha
 RE_CAPTCHA_SECRET = ''
