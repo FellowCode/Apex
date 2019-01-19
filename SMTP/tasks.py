@@ -22,12 +22,12 @@ def send_servorder_mail(user_mail, order_id):
 
     subject, from_email = 'Поступил заказ', 'info@apex79.ru'
     text_content = 'Поступил заказ ' + str(order_id) + '\n'
-    text_content += 'Подробные данные заказа: http://apex79.ru/admin/Main/serviceorder/' + str(order_id) + '/change/\n'
-    text_content += 'Список заказов: http://apex79.ru/admin/Main/serviceorder/\n'
+    text_content += 'Подробные данные заказа: http://apex79.ru/admin/Service/serviceorder/' + str(order_id) + '/change/\n'
+    text_content += 'Список заказов: http://apex79.ru/admin/Service/serviceorder/\n'
 
     html_content = '<p>Поступил заказ <b>' + str(order_id) + '</b></p>'
-    html_content += '<p>Подробные данные заказа: http://apex79.ru/admin/Main/serviceorder/' + str(order_id) + '/change/</p>'
-    html_content += '<p>Список заказов: http://apex79.ru/admin/Main/serviceorder/</p>'
+    html_content += '<p>Подробные данные заказа: http://apex79.ru/admin/Service/serviceorder/' + str(order_id) + '/change/</p>'
+    html_content += '<p>Список заказов: http://apex79.ru/admin/Service/serviceorder/</p>'
 
     msg = EmailMultiAlternatives(subject, text_content, from_email, admin_emails)
     msg.attach_alternative(html_content, "text/html")

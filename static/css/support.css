@@ -1,6 +1,8 @@
 .result, .order {
     margin-top: 50px;
-    padding-bottom: 30px !important;
+}
+.btn {
+    margin-bottom: 30px;
 }
 .result h5.accept{
     font-size: 24px;

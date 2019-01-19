@@ -47,6 +47,9 @@
                         <div class="col s8 offset-s2 m6 offset-m3 l4 offset-l4">
                             <button id="submitBtn" class="btn green lighten-1 waves-effect waves-light full-width" disabled>Отправить</button>
                         </div>
+                        <div class="progress" style="display: none;">
+                            <div class="indeterminate"></div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -54,5 +57,5 @@
 {% endblock %}
 {% block script %}
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src='{% static 'js/serviceOrder.js' %}'></script>
+    <script src='{% static 'js/serviceOrder.js' %}?version=3'></script>
 {% endblock %}
