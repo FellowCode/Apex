@@ -4,7 +4,7 @@
 {% block title %}Apex Биробиджан{% endblock %}
 
 {% block stylesheet %}
-    <link href="{% static 'css/index.css' %}?version=2" rel="stylesheet">
+    <link href="{% static 'css/index.css' %}?version=3" rel="stylesheet">
 {% endblock %}
 {% block content %}
     <div class="container">
@@ -78,7 +78,12 @@
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
+            <div class="col s12 m12 l10 offset-l1">
+                <div class="col s12 z-depth-1 about-img">
+                    <img class="responsive-img" src="{% static 'img/Service.jpg' %}">
+                </div>
+            </div>
         </div>
     </div>
 {% endblock content %}
