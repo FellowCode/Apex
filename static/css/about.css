@@ -5,13 +5,17 @@
 }
 .about h4.main {
     margin-top: 0;
-    font-weight: 600;
+    margin-left: 0;
+    font-weight: 400;
+}
+.about h4 {
+    margin-left: 25px;
 }
 .about h5 {
-    margin-left: 15px;
+    margin-left: 50px;
 }
 .about h6 {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -20,3 +20,11 @@
 .nav-wrapper .icon i {
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-wrapper .logo img {
+        height: 56px;
+        width: auto;
+        padding: 0 15px;
+    }
+}

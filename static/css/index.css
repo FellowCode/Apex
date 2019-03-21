@@ -1,3 +1,22 @@
+.index-about{
+    margin-top: 30px;
+    background: url("../img/Pattern1.jpg") repeat;
+    padding: 20px !important;
+}
+.index-about h3 {
+    margin-top: 10px;
+}
+.index-about p {
+    font-weight: 500;
+}
+.index-about ul:not(.browser-default)>li {
+    list-style: circle inside;
+}
+.index-about ul>li {
+    list-style: disc inside;
+    font-weight: 500;
+}
+
 .about-card {
     background: url("../img/Pattern1.jpg") repeat;
     padding: 20px !important;
