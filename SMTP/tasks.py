@@ -1,6 +1,6 @@
 from django.core.mail import EmailMultiAlternatives
 
-admin_emails = ['sergo79_f1@mail.ru', 'pipecvk@mail.ru', 'support@apex79.ru']
+admin_emails = ['sergo79_f1@mail.ru', 'pipiecvk@mail.ru', 'support@apex79.ru']
 
 def send_servorder_mail(user_mail, order_id):
     subject, from_email = 'Заказ принят', 'info@apex79.ru'
