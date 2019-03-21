@@ -17,8 +17,28 @@
 .about h6 {
     margin-left: 50px;
 }
-
+.social-btns {
+    margin-top: 10px;
+}
+.social-btns .soc-btn{
+    position: relative;
+    display: block;
+    width: 10%;
+    float: left;
+    padding: 5px;
+}
+@media only screen and (max-width: 1200px) {
+    .social-btns .soc-btn{
+        width: 13%;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .about {
+        padding: 20px !important;
+    }
+    .social-btns .soc-btn{
+        width: 20%;
+    }
     .about h4 {
         font-size: 18px;
     }

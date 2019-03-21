@@ -27,4 +27,7 @@
         width: auto;
         padding: 0 15px;
     }
+    .nav-wrapper a {
+        height: 56px;
+    }
 }
