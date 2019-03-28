@@ -4,7 +4,7 @@
 {% block title %}Apex Биробиджан{% endblock %}
 
 {% block stylesheet %}
-    <link href="{% static 'css/index.css' %}?version=5" rel="stylesheet">
+    <link href="{% static 'css/index.css' %}?version=6" rel="stylesheet">
 {% endblock %}
 {% block content %}
     <div class="container">
@@ -24,21 +24,11 @@
                 </div>
             </div>
             <div class="col s12 m6 l4">
-                <div class="col s12 z-depth-1 about-card">
-                    <div class="col s6 offset-s3">
-                        <img class="responsive-img circle" src="{% static 'img\1_1.jpg' %}">
+                <div class="col s12 z-depth-1 about-card no-padding">
+                    <div class="col s12 no-padding">
+                        <img alt class="responsive-img" src="{% static 'img\apex2.jpg' %}">
                     </div>
-                    <div class="col s12">
-                        <h5 class="title">Выездная проверка автомобиля экспертом</h5>
-                        <ul>
-                            <li>Проверка автомобиля по 100 параметрам</li>
-                            <li>Оценка стоимости автомобиля</li>
-                            <li>Аргументированный торг с продавцом</li>
-                            <li>Экспертная оценка целесообразности покупки</li>
-                        </ul>
-
-                    </div>
-                    <div class="bottom-block">
+                    <div class="col s12 bottom-block">
                         <h5 class="price">3000р.</h5>
                         <div class="col s10 offset-s1 l8 offset-l2">
                         <a href="/service/order?id=1" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
@@ -47,21 +37,11 @@
                 </div>
            </div>
             <div class="col s12 m6 l4">
-                <div class="col s12 z-depth-1 about-card">
-                    <div class="col s6 offset-s3">
-                        <img class="responsive-img circle" src="{% static 'img\2_1.jpg' %}">
+                <div class="col s12 z-depth-1 about-card no-padding">
+                    <div class="col s12 no-padding">
+                        <img alt class="responsive-img" src="{% static 'img\apex3.jpg' %}">
                     </div>
-                    <div class="col s12">
-                        <h5 class="title">Эксперт на день</h5>
-                        <ul>
-                            <li>Преимущества выездной проверки</li>
-                            <li>Советы по выбору объявлений</li>
-                            <li>Неограниченное количество автомобилей в течение дня</li>
-                            <li>Перемещение на автомобиле эксперта</li>
-                            <li>Стоимость выгоднее, чем при разовом выезде</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-block">
+                    <div class="col s12 bottom-block">
                         <h5 class="price">12500р.</h5>
                         <div class="col s10 offset-s1 l8 offset-l2">
                         <a href="/service/order?id=2" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
@@ -69,32 +49,34 @@
                     </div>
                 </div>
            </div>
-            <div class="col s12 m6 l4">
-                <div class="col s12 z-depth-1 about-card">
-                    <div class="col s6 offset-s3">
-                        <img class="responsive-img circle" src="{% static 'img\3_1.jpg' %}">
+            <div class="col s12 m6 l4 hide-on-med-only">
+                <div class="col s12 z-depth-1 about-card no-padding">
+                    <div class="col s12 no-padding">
+                        <img alt class="responsive-img" src="{% static 'img\apex1.jpg' %}">
                     </div>
-                    <div class="col s12">
-                        <h5 class="title">Подбор автомобиля под ключ</h5>
-                        <ul>
-                            <li>Преимущества выездной проверки</li>
-                            <li>Экономия личного времени и денег</li>
-                            <li>Сопровождение процесса покупки</li>
-                            <li>Контроль передачи денег и оформления документов</li>
-                            <li>Поиск автомобиля до результата</li>
-                            <li>Возможность получить лучший авто за свои деньги</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-block">
+                    <div class="col s12 bottom-block">
                         <h5 class="price">11000р.</h5>
                         <div class="col s10 offset-s1 l8 offset-l2">
                         <a href="/service/order?id=3" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
                         </div>
                     </div>
                 </div>
-            </div>
+           </div>
+            <div class="col s12 l4 show-on-med-only">
+                <div class="col s6 offset-s3 z-depth-1 about-card no-padding">
+                    <div class="col s12 no-padding">
+                        <img alt class="responsive-img" src="{% static 'img\apex1.jpg' %}">
+                    </div>
+                    <div class="col s12 bottom-block">
+                        <h5 class="price">11000р.</h5>
+                        <div class="col s10 offset-s1 l8 offset-l2">
+                        <a href="/service/order?id=3" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
             <div class="col s12 m12 l10 offset-l1">
-                <div class="col s12 z-depth-1 about-img">
+                <div class="col s12 z-depth-1 about-img no-padding">
                     <img class="responsive-img" src="{% static 'img/Service.jpg' %}">
                 </div>
             </div>
