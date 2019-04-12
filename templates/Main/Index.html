@@ -49,7 +49,7 @@
                     </div>
                 </div>
            </div>
-            <div class="col s12 m6 l4 hide-on-med-only">
+            <div class="col s12 m6 l4">
                 <div class="col s12 z-depth-1 about-card no-padding">
                     <div class="col s12 no-padding">
                         <img alt class="responsive-img" src="{% static 'img\apex1.jpg' %}">
@@ -62,24 +62,37 @@
                     </div>
                 </div>
            </div>
-            <div class="col s12 l4 show-on-med-only">
-                <div class="col s6 offset-s3 z-depth-1 about-card no-padding">
+            <div class="col s12 m6 l4 offset-l4 hide-on-med-only">
+                <div class="col s12 z-depth-1 about-card no-padding">
                     <div class="col s12 no-padding">
-                        <img alt class="responsive-img" src="{% static 'img\apex1.jpg' %}">
+                        <img alt class="responsive-img" src="{% static 'img\apex4.jpg' %}">
                     </div>
                     <div class="col s12 bottom-block">
-                        <h5 class="price">11000р.</h5>
+                        <h5 class="price">Цена договорная</h5>
                         <div class="col s10 offset-s1 l8 offset-l2">
-                        <a href="/service/order?id=3" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
+                        <a href="/service/order?id=4" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
                         </div>
                     </div>
                 </div>
            </div>
-            <div class="col s12 m12 l10 offset-l1">
+            <div class="col s6 l4 show-on-med-only">
+                <div class="col s12 z-depth-1 about-card no-padding">
+                    <div class="col s12 no-padding">
+                        <img alt class="responsive-img" src="{% static 'img\apex4.jpg' %}">
+                    </div>
+                    <div class="col s12 bottom-block">
+                        <h5 class="price">Цена договорная</h5>
+                        <div class="col s10 offset-s1 l8 offset-l2">
+                        <a href="/service/order?id=4" class="waves-effect waves-light btn-large full-width green lighten-1">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <!--<div class="col s12 m12 l10 offset-l1">
                 <div class="col s12 z-depth-1 about-img no-padding">
                     <img class="responsive-img" src="{% static 'img/Service.jpg' %}">
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 {% endblock content %}
